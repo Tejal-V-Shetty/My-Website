@@ -1,47 +1,26 @@
-body{
-	background:	white;
-	margin: 0px;
-	padding: 0px;
-	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-
+/* Header */
 header{
-	background-color: #000;
-	background-image: url("Images/LampCitybkg.png");
+	background-color: rgba(20, 20, 20, 0.5);
+	background-image: url("Images/Molecular\ Metallics_4K.png");
+	background-repeat:no-repeat;
 	background-size: 100%;
 	background-position: center;
+	background-blend-mode: lighten;
+	background-attachment: fixed;
 	color: white;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-size: 25px;
-	height: 760px;
+	height: 1000px;
 	padding: 0px 0px;
+	text-align:left;
 }
 
-a{
-	text-decoration: none;
-}
-
-a:hover{
-	text-decoration: underline;
-}
-
-header h1{
-	display: inline-block;
-	font-size:40px;
-	margin: 20px 20px;
-	padding: 1%;
-	text-align: left;
-}
-
-.frontpagetxt{
-	display: inline-block;
-	font-size:30px;
-	margin: 375px 25px 20px 25px;
-	padding: 1%;
-	text-align: left;
-}
-
-nav ul{	
-	background-color:rgba(32, 32, 32, 0.2);
+nav {
+	align-items: center;
+	background-color:rgba(10, 10, 10, 0.4);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	margin: 0px;
 	padding: 10px 20px;
 }
@@ -58,10 +37,6 @@ nav ul li{
 	vertical-align: middle;
 }
 
-nav ul li a{
-	color: white;
-}
-
 .logo{
 	background-color: rgba(0,0,0,0);
 	background-image: url("Images/Logo.png");
@@ -73,6 +48,88 @@ nav ul li a{
 	position: relative;
 	text-decoration: none;
 	text-indent: -99999px;
+}
+
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	position:relative;
+}
+
+nav ul li a::after{
+	content:'';
+	width:0%;
+	height: 3px;
+	background: #0081c1;
+	position: absolute;
+	left:-10%;
+	bottom:-20%;
+	transition: 0.25s;
+}
+
+nav ul li a:hover::after{
+	width:120%;
+}
+
+header h1{
+	display: inline-block;
+	font-size:40px;
+	margin: 20px 20px;
+	padding: 1%;
+	text-align: left;
+}
+
+.headerContent{
+	margin: 5% 5%;
+	border-radius: 3px;
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.frontPageHeaderContent{
+	padding: 10% 5% 10% 5%;
+}
+
+.headertxt{
+	display: inline-block;
+	font-size:40px;
+	text-decoration: underline;
+	padding: 1%;
+	text-align: left;
+}
+
+.frontpagetxt{
+	display: inline-block;
+	font-size:30px;
+	/* margin: 20px 25px 20px 25px; */
+	padding: 1%;
+	text-align: left;
+}
+
+
+/* Body */
+
+body{
+	background:	white;
+	margin: 0px;
+	padding: 0px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.display{
+	background-color: rgba(20, 20, 20, 1);
+	color:rgb(235, 235, 235);
+	display: flex;
+	flex-direction: column;
+}
+
+.display h1{
+	padding : 50px;
+}
+
+.displayItem{
+	background-image: url("Images/LampCitybkg.png");
+	background-size: 100%;
+	height: 420px;
 }
 
 .features{ 
@@ -97,21 +154,7 @@ nav ul li a{
 	width:300px;
 }
 
-.display{
-	display: flex;
-	flex-direction: column;
-	color:black;
-}
-
-.display h1{
-	padding : 50px;
-}
-.item{
-	background-image: url("Images/LampCitybkg.png");
-	background-size: 100%;
-	height: 420px;
-}
-
+/* Footer */
 footer{
 	background: black;
 	color: #999;
