@@ -2,7 +2,7 @@
 
 body{
 	background-color: rgba(20, 20, 20, 1);
-	background-image: url("Images/Molecular\ Metallics_4K.png");
+	background-image: url("/Images/Molecular\ Metallics_4K.png");
 	background-repeat:no-repeat;
 	background-size: 100%;
 	background-position: center;
@@ -17,7 +17,7 @@ body{
 	background-color:rgba(10, 10, 10, 0.4);
 	border-radius: 3px;
 	font-size: 25px;
-	margin: 5% 5%;
+	margin: 5% 3%;
 	padding: 5%;
 }
 
@@ -32,7 +32,8 @@ header{
 /*Nav*/
 nav {
 	align-items: center;
-	background-color:rgba(10, 10, 10, 0.4);
+	/* background-color:; */
+	background: linear-gradient(90deg, rgba(0, 5, 13, 0.9),rgba(0, 13, 35, 0.9));
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -52,7 +53,7 @@ nav ul li{
 
 .logo{
 	background-color: rgba(0,0,0,0);
-	background-image: url("Images/Logo.png");
+	background-image: url("/Images/Logo.png");
 	background-size: 150px;
 	background-repeat: no-repeat;
 	display: inline-block;
@@ -93,13 +94,9 @@ header h1{
 }
 
 /* Header content */
-.headerContent{
-	margin: 5% 5%;
-	border-radius: 3px;
-	background-color: rgba(10, 10, 10, 0.4);
-}
 
 .frontPageHeaderContent{
+	background-color:rgba(5, 8, 13, 0.8);
 	padding: 10% 5% 10% 5%;
 }
 
@@ -120,8 +117,49 @@ header h1{
 
 /* Display*/
 
+.displayShelf{
+	background-color:rgba(5, 8, 13, 0.9);
+}
+
 .displayItem{
 	color: white;
+}
+
+.displayShelf h1{
+	display: inline-block;
+	font-size:40px;
+	text-align: left;
+	text-decoration: underline;
+}
+
+.displayImageLink{
+	background-color: rgba(0,0,0,0);
+	color: white;
+	display: flex;
+	opacity: 50%;
+	position: relative;
+	text-decoration: none;
+	text-align: center;
+}
+
+.displayImageLink:hover{
+	opacity: 100%;
+}
+
+.displayImageIcon{
+	width: 40%;
+	/* height: 50%; */
+	border-radius: 2px;
+}
+
+.displayImageText{
+	position: absolute;
+	font-size: 40px;
+	font-weight: 750;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-transform: uppercase;
 }
 
 .features{ 
@@ -145,6 +183,7 @@ header h1{
 	width:300px;
 }
 
+
 /* Footer */
 footer{
 	background: black;
@@ -155,8 +194,8 @@ footer{
 	text-align: center;
 }
 
-@media screen and (max-width: 800px) {
-	.features{
-		background-color: red;
+@media only screen and (max-width: 700px) {
+	body{
+		background-repeat:repeat;
 	}
 }
