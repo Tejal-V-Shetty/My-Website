@@ -13,6 +13,13 @@ body{
 	margin: 0;
 }
 
+
+@media only screen and (max-width: 700px) {
+	body{
+		background-repeat:repeat;
+	}
+}
+
 .bodySection{
 	background-color:rgba(10, 10, 10, 0.4);
 	border-radius: 3px;
@@ -23,7 +30,6 @@ body{
 
 /* Header */
 header{
-	color: white;
 	font-size: 25px;
 	padding: 0px 0px;
 	text-align:left;
@@ -42,7 +48,6 @@ nav {
 
 nav ul li{
 	background-color:rgba(255,255,255,0);
-	color: white;
 	display: inline-block;
 	width: 150px;
 	text-align: center;
@@ -115,7 +120,7 @@ header h1{
 	text-align: left;
 }
 
-/* Display*/
+/*Display Shelf*/
 
 .displayShelf{
 	background-color:rgba(5, 8, 13, 0.9);
@@ -135,7 +140,7 @@ header h1{
 .displayImageLink{
 	background-color: rgba(0,0,0,0);
 	color: white;
-	display: flex;
+	display: inline-block;
 	opacity: 50%;
 	position: relative;
 	text-decoration: none;
@@ -147,8 +152,8 @@ header h1{
 }
 
 .displayImageIcon{
-	width: 40%;
-	/* height: 50%; */
+	width: 700px;
+	height: 350px;
 	border-radius: 2px;
 }
 
@@ -162,11 +167,23 @@ header h1{
 	text-transform: uppercase;
 }
 
+/*Features*/
+
 .features{ 
+	background-color:rgba(10, 10, 10, 0.9);
+}
+
+.features h1{
+	display: inline-block;
+	font-size:40px;
+	text-align: left;
+	text-decoration: underline;
+}
+
+.socialsFeatures{
 	display:flex;
 	flex-direction: row;
-	background-color:rgba(10, 10, 10, 0.4);
-	padding: 0.5%
+	flex-wrap: wrap;
 }
 
 .features figure{
@@ -183,6 +200,14 @@ header h1{
 	width:300px;
 }
 
+.socialsLink{
+	color: white;
+	text-decoration: none;
+}
+
+.contactLink{
+	color:rgb(234, 245, 255);
+}
 
 /* Footer */
 footer{
@@ -192,10 +217,4 @@ footer{
 	font-size: 15px;
 	padding: 10px;
 	text-align: center;
-}
-
-@media only screen and (max-width: 700px) {
-	body{
-		background-repeat:repeat;
-	}
 }
