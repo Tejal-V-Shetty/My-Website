@@ -210,6 +210,24 @@ header h1{
 	color:rgb(234, 245, 255);
 }
 
+/* Project Content */
+.projectContent{
+	display: block;
+}
+
+.contentImage{
+	display: block;
+	width: 1080px;
+	margin: 0 auto;
+}
+
+.contentImageText{
+	margin:5px;
+	color: #b3b3b3;
+	font-size: 20px;
+	text-align: center;
+}
+
 /* Footer */
 footer{
 	background: black;
